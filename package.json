@@ -1,0 +1,19 @@
+{
+  "name": "usaliabot",
+  "version": "1.0.0",
+  "description": "discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "miku.pink",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "eris": "^0.15.0",
+    "knex": "^0.95.4",
+    "mysql": "^2.18.1",
+    "ytdl-core": "^4.9.2",
+    "ytdl-core-discord": "^1.3.0"
+  }
+}

@@ -1,0 +1,8 @@
+.env
+.vscode
+.vs
+node_modules
+youtube-dl.exe
+*.mp3
+*.m4a
+*.sql
