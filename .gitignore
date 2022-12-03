@@ -1,6 +1,7 @@
 .env
 .vscode
 .vs
+song.bin
 node_modules
 youtube-dl.exe
 *.mp3
