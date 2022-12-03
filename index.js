@@ -6,7 +6,6 @@ const exec = require('child_process').exec;
 
 const fs = require('fs');
 
-//my stuff
 const MusicRepository = require("./MusicRepository");
 const { match } = require("assert");
 const { debug } = require("console");
@@ -35,25 +34,6 @@ const MusicQueue = {
 
     
     play = async function (connection, url) {
-
-        //let info = await ytdl.getInfo(url); //info json? download info into json file and read?
-        //fileName = 'music/' + info.videoDetails.title + '.webm'; //mp3?
-        //env.process.TEST_SONG_URL -o music/%(title)s-%(id)s.%(ext)s
-
-        //check db if song url present and get filename?
-
-        //const getMusicFile = (url) => {
-        //    return new Promise((resolve, reject) => {
-        //    });
-        //};
-
-        //let data = await getMusicInfo(url);
-        //temporary filename, set with db later
-
-        //excists on database?
-        
-
-        //let fileName = 'music/TestSong.mp3'
 
         console.log(`checking database file for: "${url}".. `);
         let musicFileName = await music.getMusicFilenameFromUrl(url);
@@ -248,8 +228,6 @@ const MusicQueue = {
             //(feat|ft)[\.\s](\s+)?(?<feat>.+\w)
             //\s+(?<name>.+\w?)\s(Official?)// depricated //
             //.replace(/\s?official\.?[\s\.]?/i, '').trim()
-            
-            //use keywords for tags 
             //info.videoDetails.keywords
             
         }
@@ -276,7 +254,7 @@ const MusicQueue = {
         matches = msg.content.match(/add\s+alias\s+(?<alias>.+\S)(\s+)?\|(\s+)?(?<tag>.+\S)/i);
 
         if (matches) {
-            //add alias to tags such as Touhou with 東方
+            //add alias to tags?
             console.log(matches);
         }
 
